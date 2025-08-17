@@ -9,9 +9,41 @@
       width: 100px;
       height: 100px;
     }
+    #button1 {
+      margin-top: 4px;
+      margin-left: 0px;
+    }
+    #button2 {
+      margin-top: 4px;
+      margin-left: 0px;
+    }
+    #button3 {
+      margin-top: 4px;
+      margin-left: 0px;
+    }
     #button4 {
-      margin-top: 5px;
-      margin-bottom: 5px;
+      margin-top: 4px;
+      margin-left: 0px;
+    }
+    #button5 {
+      margin-top: 4px;
+      margin-left: 0px;
+    }
+    #button6 {
+      margin-top: 4px;
+      margin-left: 0px;
+    }
+    #button7 {
+      margin-top: 4px;
+      margin-left: 0px;
+    }
+    #button8 {
+      margin-top: 4px;
+      margin-left: 0px;
+    }
+    #button9 {
+      margin-top: 4px;
+      margin-left: 0px;
     }
   </style>
 </head>
@@ -31,50 +63,114 @@
 
   <script>
 
-    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    let possiblities = ["button1", "button2", "button3", "button4", "button5", "button6", "button7", "button8", "button9"]
 
     document.getElementById("button1").addEventListener("click", function(e){
+      //0 check if clickED
+      if (!possiblities.includes("button1")) return;
+
+      //1 add sign
       e.target.textContent = "X"
+      
+      //2 remove from possiblities
+      let idx = possiblities.indexOf("button1")
+      possiblities.splice(idx, 1)
     })
 
     document.getElementById("button2").addEventListener("click", function(e){
-      e.target.textContent = "X"
+      //0 check if clickED
+      if (!possiblities.includes("button2")) return;
 
+      //1 add sign
+      e.target.textContent = "X"
+      
+      //2 remove from possiblities
+      let idx = possiblities.indexOf("button2")
+      possiblities.splice(idx, 1)
     })
 
     document.getElementById("button3").addEventListener("click", function(e){
-      e.target.textContent = "X"
+      //0 check if clickED
+      if (!possiblities.includes("button3")) return;
 
+      //1 add sign
+      e.target.textContent = "X"
+      
+      //2 remove from possiblities
+      let idx = possiblities.indexOf("button3")
+      possiblities.splice(idx, 1)
     })
 
     document.getElementById("button4").addEventListener("click", function(e){
-      e.target.textContent = "X"
+      //0 check if clickED
+      if (!possiblities.includes("button4")) return;
 
+      //1 add sign
+      e.target.textContent = "X"
+      
+      //2 remove from possiblities
+      let idx = possiblities.indexOf("button4")
+      possiblities.splice(idx, 1)
     })
 
     document.getElementById("button5").addEventListener("click", function(e){
-      e.target.textContent = "X"
+      //0 check if clickED
+      if (!possiblities.includes("button5")) return;
 
+      //1 add sign
+      e.target.textContent = "X"
+      
+      //2 remove from possiblities
+      let idx = possiblities.indexOf("button5")
+      possiblities.splice(idx, 1)
     })
 
     document.getElementById("button6").addEventListener("click", function(e){
-      e.target.textContent = "X"
+      //0 check if clickED
+      if (!possiblities.includes("button6")) return;
 
+      //1 add sign
+      e.target.textContent = "X"
+      
+      //2 remove from possiblities
+      let idx = possiblities.indexOf("button6")
+      possiblities.splice(idx, 1)
     })
 
     document.getElementById("button7").addEventListener("click", function(e){
-      e.target.textContent = "X"
+      //0 check if clickED
+      if (!possiblities.includes("button7")) return;
 
+      //1 add sign
+      e.target.textContent = "X"
+      
+      //2 remove from possiblities
+      let idx = possiblities.indexOf("button7")
+      possiblities.splice(idx, 1)
     })
 
     document.getElementById("button8").addEventListener("click", function(e){
-      e.target.textContent = "X"
+      //0 check if clickED
+      if (!possiblities.includes("button8")) return;
 
+      //1 add sign
+      e.target.textContent = "X"
+      
+      //2 remove from possiblities
+      let idx = possiblities.indexOf("button8")
+      possiblities.splice(idx, 1)
     })
 
     document.getElementById("button9").addEventListener("click", function(e){
-      e.target.textContent = "X"
+      //0 check if clickED
+      if (!possiblities.includes("button9")) return;
 
+      //1 add sign
+      e.target.textContent = "X"
+      
+      //2 remove from possiblities
+      let idx = possiblities.indexOf("button9")
+      possiblities.splice(idx, 1)
     })
 
   </script>
