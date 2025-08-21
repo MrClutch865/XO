@@ -48,129 +48,167 @@
   </style>
 </head>
 <body>
-
-  <button id="button1"></button>
-  <button id="button2"></button>
-  <button id="button3"></button>
-  <br>
-  <button id="button4"></button>
-  <button id="button5"></button>
-  <button id="button6"></button>
-  <br>
-  <button id="button7"></button>
-  <button id="button8"></button>
-  <button id="button9"></button>
-
+  <div id="Btns">
+    <button id="button0"></button>
+    <button id="button1"></button>
+    <button id="button2"></button>
+    <br>
+    <button id="button3"></button>
+    <button id="button4"></button>
+    <button id="button5"></button>
+    <br>
+    <button id="button6"></button>
+    <button id="button7"></button>
+    <button id="button8"></button>
+  </div>
   <script>
 
-    let possiblities = ["button1", "button2", "button3", "button4", "button5", "button6", "button7", "button8", "button9"]
+    let possiblities = [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
-    document.getElementById("button1").addEventListener("click", function(e){
+    const buttons = possiblities
+    
+    document.getElementById("button0").addEventListener("click", function(e){
       //0 check if clickED
-      if (!possiblities.includes("button1")) return;
-
+      if (!possiblities.includes(0)) return;
+      
       //1 add sign
       e.target.textContent = "X"
       
       //2 remove from possiblities
-      let idx = possiblities.indexOf("button1")
+      let idx = possiblities.indexOf(0)
       possiblities.splice(idx, 1)
+      if (buttons.length > 0){
+        (Math.random()*9).textContent = "O"
+        console.log("O")
+      }
+    })
+
+    document.getElementById("button1").addEventListener("click", function(e){
+      //0 check if clickED
+      if (!possiblities.includes(1)) return;
+      
+      //1 add sign
+      e.target.textContent = "X"
+      
+      //2 remove from possiblities
+      let idx = possiblities.indexOf(1)
+      possiblities.splice(idx, 1)
+      if (buttons.length > 0){
+        (Math.random()*9).textContent = "O"
+        console.log("O")
+      }
     })
 
     document.getElementById("button2").addEventListener("click", function(e){
       //0 check if clickED
-      if (!possiblities.includes("button2")) return;
-
+      if (!possiblities.includes(2)) return;
+      
       //1 add sign
       e.target.textContent = "X"
       
       //2 remove from possiblities
-      let idx = possiblities.indexOf("button2")
+      let idx = possiblities.indexOf(2)
       possiblities.splice(idx, 1)
+      if (buttons.length > 0){
+        (Math.random()*9).textContent = "O"
+        console.log("O")
+      }
     })
 
     document.getElementById("button3").addEventListener("click", function(e){
       //0 check if clickED
-      if (!possiblities.includes("button3")) return;
-
+      if (!possiblities.includes(3)) return;
+      
       //1 add sign
       e.target.textContent = "X"
       
       //2 remove from possiblities
-      let idx = possiblities.indexOf("button3")
+      let idx = possiblities.indexOf(3)
       possiblities.splice(idx, 1)
+      if (buttons.length > 0){
+        (Math.random()*9).textContent = "O"
+        console.log("O")
+      }
     })
 
     document.getElementById("button4").addEventListener("click", function(e){
       //0 check if clickED
-      if (!possiblities.includes("button4")) return;
-
+      if (!possiblities.includes(4)) return;
+      
       //1 add sign
       e.target.textContent = "X"
       
       //2 remove from possiblities
-      let idx = possiblities.indexOf("button4")
+      let idx = possiblities.indexOf(4)
       possiblities.splice(idx, 1)
+      if (buttons.length > 0){
+        (Math.random()*9).textContent = "O"
+        console.log("O")
+      }
     })
 
     document.getElementById("button5").addEventListener("click", function(e){
       //0 check if clickED
-      if (!possiblities.includes("button5")) return;
-
+      if (!possiblities.includes(5)) return;
+      
       //1 add sign
       e.target.textContent = "X"
       
       //2 remove from possiblities
-      let idx = possiblities.indexOf("button5")
+      let idx = possiblities.indexOf(5)
       possiblities.splice(idx, 1)
+      if (buttons.length > 0){
+        (Math.random()*9).textContent = "O"
+        console.log("O")
+      }
     })
 
     document.getElementById("button6").addEventListener("click", function(e){
       //0 check if clickED
-      if (!possiblities.includes("button6")) return;
-
+      if (!possiblities.includes(6)) return;
+      
       //1 add sign
       e.target.textContent = "X"
       
       //2 remove from possiblities
-      let idx = possiblities.indexOf("button6")
+      let idx = possiblities.indexOf(6)
       possiblities.splice(idx, 1)
+      if (buttons.length > 0){
+        (Math.random()*9).textContent = "O"
+        console.log("O")
+      }
     })
 
     document.getElementById("button7").addEventListener("click", function(e){
       //0 check if clickED
-      if (!possiblities.includes("button7")) return;
-
+      if (!possiblities.includes(7)) return;
+      
       //1 add sign
       e.target.textContent = "X"
       
       //2 remove from possiblities
-      let idx = possiblities.indexOf("button7")
+      let idx = possiblities.indexOf(7)
       possiblities.splice(idx, 1)
+      if (buttons.length > 0){
+        (Math.random()*9).textContent = "O"
+        console.log("O")
+      }
     })
 
     document.getElementById("button8").addEventListener("click", function(e){
       //0 check if clickED
-      if (!possiblities.includes("button8")) return;
-
+      if (!possiblities.includes(8)) return;
+      
       //1 add sign
       e.target.textContent = "X"
       
       //2 remove from possiblities
-      let idx = possiblities.indexOf("button8")
+      let idx = possiblities.indexOf(8)
       possiblities.splice(idx, 1)
-    })
-
-    document.getElementById("button9").addEventListener("click", function(e){
-      //0 check if clickED
-      if (!possiblities.includes("button9")) return;
-
-      //1 add sign
-      e.target.textContent = "X"
-      
-      //2 remove from possiblities
-      let idx = possiblities.indexOf("button9")
-      possiblities.splice(idx, 1)
+      if (buttons.length > 0){
+        (Math.random()*9).textContent = "O"
+        console.log("O")
+      }
     })
 
   </script>
